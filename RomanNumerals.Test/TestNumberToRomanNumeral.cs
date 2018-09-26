@@ -8,9 +8,9 @@ namespace RomanNumerals.Test
     {
         [Theory]
         [InlineData(1, "I")]
-        //[InlineData(5, "V")]
-        //[InlineData(9, "IX")]
-        //[InlineData(12, "XII")]
+        [InlineData(5, "V")]
+        [InlineData(9, "IX")]
+        [InlineData(12, "XII")]
         public void ConvertNumberToRomanNumeral(int inputNumber, string outputRomanNumeral)
         {
             //Arrange
