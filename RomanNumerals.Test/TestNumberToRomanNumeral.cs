@@ -11,19 +11,22 @@ namespace RomanNumerals.Test
         [InlineData(5, "V")]
         [InlineData(9, "IX")]
         [InlineData(12, "XII")]
+        [InlineData(16, "XVI")]
+        [InlineData(29, "XXIX")]
+        [InlineData(44, "XLIV")]
+        [InlineData(45, "XLV")]
+        [InlineData(68, "LXVIII")]
+        [InlineData(83, "LXXXIII")]
+        [InlineData(97, "XCVII")]
+        [InlineData(99, "XCIX")]
+        [InlineData(500, "D")]
+        [InlineData(501, "DI")]
+        [InlineData(649, "DCXLIX")]
+        [InlineData(798, "DCCXCVIII")]
+        [InlineData(891, "DCCCXCI")]
         public void ConvertNumberToRomanNumeral(int inputNumber, string outputRomanNumeral)
         {
             //Arrange
-            Dictionary<int, string> NumToRoman = new Dictionary<int, string>()
-            {
-                { 1, "I" },
-                { 5, "V" },
-                { 10, "X" },
-                { 50, "L" },
-                { 100, "C" }
-                //{ 1, "I" },
-                //{ 1, "I" },
-            };
             var ConvertInput = new ConvertInput();
 
             //Act
