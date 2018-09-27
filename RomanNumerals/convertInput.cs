@@ -36,7 +36,11 @@ namespace RomanNumerals
                 }
                 else if (i + 1 == 2) // 2 digits, 10-99
                 {
-
+                    var Convert_10_to_99 = new Convert_10_to_99();
+                    string toBeConverted = "";
+                    toBeConverted = numberToCompare[i].ToString();
+                    var result = Convert_10_to_99.ConvertIt(toBeConverted);
+                    convertedToRomanNumeral += result;
                 }
                 else if (i + 1 == 3) // 3 digits, 100-999
                 {
