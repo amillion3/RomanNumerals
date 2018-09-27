@@ -12,22 +12,24 @@ namespace RomanNumerals.Conversions
         {
             switch (input)
             {
+                case "0":
+                    return "";
                 case "1":
                     return "X";
                 case "2":
                     return "XX";
                 case "3":
-                    return "X";
+                    return "XXX";
                 case "4":
                     return "XL";
                 case "5":
                     return "L";
                 case "6":
-                    return "LI";
+                    return "LX";
                 case "7":
-                    return "LII";
+                    return "LXX";
                 case "8":
-                    return "LIII";
+                    return "LXXX";
                 case "9":
                     return "XC";
                 default:

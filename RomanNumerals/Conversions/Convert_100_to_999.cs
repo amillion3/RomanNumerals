@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumerals.Conversions
 {
-    class Convert_1_to_9
+    class Convert_100_to_999
     {
         public string ConvertIt(string input)
         {
@@ -15,26 +15,28 @@ namespace RomanNumerals.Conversions
                 case "0":
                     return "";
                 case "1":
-                    return "I";
+                    return "C";
                 case "2":
-                    return "II";
+                    return "CC";
                 case "3":
-                    return "III";
+                    return "CCC";
                 case "4":
-                    return "IV";
+                    return "CD";
                 case "5":
-                    return "V";
+                    return "D";
                 case "6":
-                    return "VI";
+                    return "DC";
                 case "7":
-                    return "VII";
+                    return "DCC";
                 case "8":
-                    return "VIII";
+                    return "DCCC";
                 case "9":
-                    return "IX";
+                    return "CM";
                 default:
                     return "broke";
             }
+
+            
         }
     }
 }

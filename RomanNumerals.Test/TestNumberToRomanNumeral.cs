@@ -19,6 +19,11 @@ namespace RomanNumerals.Test
         [InlineData(83, "LXXXIII")]
         [InlineData(97, "XCVII")]
         [InlineData(99, "XCIX")]
+        [InlineData(500, "D")]
+        [InlineData(501, "DI")]
+        [InlineData(649, "DCXLIX")]
+        [InlineData(798, "DCCXCVIII")]
+        [InlineData(891, "DCCCXCI")]
         public void ConvertNumberToRomanNumeral(int inputNumber, string outputRomanNumeral)
         {
             //Arrange
