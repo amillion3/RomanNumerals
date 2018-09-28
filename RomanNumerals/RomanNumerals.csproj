@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversions\Convert_1000_to_3999.cs" />
     <Compile Include="Conversions\Convert_100_to_999.cs" />
     <Compile Include="Conversions\Convert_10_to_99.cs" />
     <Compile Include="Conversions\Convert_1_to_9.cs" />
